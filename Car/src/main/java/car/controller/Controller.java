@@ -48,6 +48,17 @@ public class Controller {
 		return "BaseDef";
 	}
 	
+	@GetMapping(value = {"/bookService"})
+	public String showBookServicePage(Model model) {
+		System.out.println("Controller -> showBookServicePage()");
+		
+		List<String> myroles = getUserRoles();
+		System.out.println(myroles);
+		model.addAttribute("MyRoles", myroles);
+		
+		return "BookServiceDef";
+	}
+	
 	@GetMapping(value = {"/worksheetItems"})
 	public String showWorkSheetItemsPage(Model model) {
 		System.out.println("Controller -> showWorkSheetItemsPage()");

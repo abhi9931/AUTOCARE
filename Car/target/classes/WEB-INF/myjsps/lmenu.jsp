@@ -64,7 +64,7 @@ font-weight: bold;
 
 		<sec:authorize access="hasRole('Customer')">
 			<h2>
-				<a href='<c:url value="serviceVehicle"/>'>Book  Service</a></br></br>
+				<a href='<c:url value="bookService"/>'>Book  Service</a></br></br>
 				<a href='<c:url value="addCar"/>'>Add Car</a>
 			</h2>
 		</sec:authorize>

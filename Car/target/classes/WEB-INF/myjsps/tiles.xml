@@ -58,8 +58,8 @@
 		<put-attribute name="BODY" value="/WEB-INF/myjsps/register.jsp" />
 	</definition>
 	
-	<definition name="AddCarDef" extends="BaseDef">
-		<put-attribute name="BODY" value="/WEB-INF/myjsps/addCar.jsp" />
+	<definition name="BookServiceDef" extends="BaseDef">
+		<put-attribute name="BODY" value="/WEB-INF/myjsps/bookService.jsp" />
 	</definition>
 	
 	<definition name="InvalidAccessDef" extends="BaseDef">
