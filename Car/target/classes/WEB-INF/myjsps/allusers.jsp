@@ -5,9 +5,15 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<!-- 
 <style type="text/css">
-body {
+
+.mytable-head , th, td{
+border: 1px solid red;
+	border-collapse: collapse;
+	text-align: center;
+	font-weight: bold;
+}
+/* body {
 	background-color: lightgray;
 }
 
@@ -51,14 +57,15 @@ input[type=submit], [type=button] {
 	border-radius: 10px;
 	font-size: 20px;
 	font-weight: bold;
-}
-</style>  -->
+} */
+</style> 
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Auto Service</title>
 </head>
 <body>
 	<div>
-	<table align="center">
+	<h2>All Users</h2>
+	<table align="center" style="border: 3px solid red; border-collapse: collapse; text-align: center; font-weight: bold;">
 			<thead class="mytable-head">
 				<tr>
 					<td>Username</td>
@@ -67,7 +74,7 @@ input[type=submit], [type=button] {
 					<td>Email</td>
 					<td>Phone</td>
 					 <!-- <td>Role</td>  -->
-					 <td>Active</td>
+					 <td>Status</td>
 				</tr>
 			</thead>
 			<tbody>
@@ -79,7 +86,14 @@ input[type=submit], [type=button] {
 						<td>${users.email}</td>
 						<td>${users.phone}</td>
 						<%-- <td>${MyRoles}</td>  --%>
-						<td>${users.active}</td>
+						<c:choose>
+						<c:when test="${users.active eq 0 }">
+						<td> Inactive</td>
+						</c:when>
+						<c:when test="${users.active eq 1 }">
+						<td> Active</td>
+						</c:when>
+						</c:choose>
 					</tr>
 				</c:forEach>
 			</tbody>

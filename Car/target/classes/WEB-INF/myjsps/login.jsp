@@ -7,6 +7,11 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Auto Service</title>
+<style type="text/css">
+a{
+text-decoration: none;
+}
+</style>
 </head>
 <body>
 	<div align="center">

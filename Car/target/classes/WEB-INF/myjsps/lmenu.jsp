@@ -6,12 +6,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-<!-- <style>
+ <style>
 a{
-font-size: 20px;
-font-weight: bold;
+text-decoration: none;
 }
-.collapsible {
+/* .collapsible {
   background-color: #777;
   color: white;
   cursor: pointer;
@@ -34,8 +33,8 @@ font-weight: bold;
   width : 12.3%;
   transition: max-height 0.2s ease-out;
   background-color: #99ffff;
-}
-</style> -->
+} */
+</style> 
 <meta charset="UTF-8">
 <title>Auto Service</title>
 </head>

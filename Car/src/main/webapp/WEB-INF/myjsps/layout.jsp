@@ -1,5 +1,15 @@
 <%@taglib uri="http://tiles.apache.org/tags-tiles" prefix="tiles" %>
 <html>
+<head>
+<style type="text/css">
+table , th, td{
+border: 1px solid red;
+	border-collapse: collapse;
+	text-align: center;
+	font-weight: bold;
+}
+</style>
+</head>
 <body>
 <table width="100%" height="100%">
 <tr height="5%">
