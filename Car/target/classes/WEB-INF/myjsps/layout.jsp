@@ -3,7 +3,7 @@
 <head>
 <style type="text/css">
 table , th, td{
-border: 1px solid red;
+border: 0px;
 	border-collapse: collapse;
 	text-align: center;
 	font-weight: bold;

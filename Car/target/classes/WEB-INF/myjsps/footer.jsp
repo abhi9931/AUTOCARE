@@ -1,15 +1,22 @@
- <div >
-<h3 align="center">@All rights reserved</h3>
-</div> 
-
-<!-- <style>
-div {
-     display: flex; 
-    justify-content: space-between;  
+ <html>
+<head>
+<style type="text/css">
+#left{
+display: inline-block;
+margin-left: 0px;
+padding-right: 65%;
+}
+#right{
+/* padding-left: 65%; */
+display: inline-block;
+margin-right: 0px;
 }
 </style>
-
-<div>
-    <p>@All rights reserved</p>
-    <p>Contact us</p>
-</div>  -->
+</head>
+ <div id="left">
+<h3>@All rights reserved</h3>
+</div> 
+ <div id="right">
+<h3>Contact us</h3>
+</div> 
+</html>
