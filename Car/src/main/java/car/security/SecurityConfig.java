@@ -44,7 +44,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 		.logout().invalidateHttpSession(true)
 		.logoutSuccessUrl("/login?logoout")
 		.and()
-		.exceptionHandling().accessDeniedPage("/WEB-INF/myjsps/invalidAccess.jsp")
+		.exceptionHandling().accessDeniedPage("/invalidAccess")
 		.and()
 		.csrf()
 		.and()

@@ -59,6 +59,17 @@ public class Controller {
 		return "BookServiceDef";
 	}
 	
+	@GetMapping(value = {"/invalidAccess"})
+	public String showInvalidAccessPage(Model model) {
+		System.out.println("Controller -> showInvalidAccessPage()");
+		
+		List<String> myroles = getUserRoles();
+		System.out.println(myroles);
+		model.addAttribute("MyRoles", myroles);
+		
+		return "InvalidAccessDef";
+	}
+	
 	@GetMapping(value = {"/worksheetItems"})
 	public String showWorkSheetItemsPage(Model model) {
 		System.out.println("Controller -> showWorkSheetItemsPage()");

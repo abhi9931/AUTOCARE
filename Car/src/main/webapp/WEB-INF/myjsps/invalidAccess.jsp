@@ -8,10 +8,8 @@
 <title>Auto Service</title>
 </head>
 <body>
-<c:import url="header.jsp"/>
 	<div align="center">
 		<h2>You are not authorised to access this page</h2>
 	</div>
-<c:import url="footer.jsp"/>
 </body>
 </html>

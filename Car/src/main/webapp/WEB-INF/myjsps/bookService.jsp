@@ -15,6 +15,9 @@ font-weight: bold;
 td{
 font-weight: bold;
 }
+select{
+width: 100%;
+}
 </style>
 </head>
 <body>
