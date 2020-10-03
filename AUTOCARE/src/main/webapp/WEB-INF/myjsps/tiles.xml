@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" 
+"http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+	<definition name="BaseDef" template="/WEB-INF/myjsps/layout.jsp">
+		<put-attribute name="HEADER" value="/WEB-INF/myjsps/header.jsp" />
+		<put-attribute name="LMENU" value="/WEB-INF/myjsps/lmenu.jsp" />
+		<put-attribute name="BODY" value="/WEB-INF/myjsps/home.jsp" />
+		<put-attribute name="RMENU" value="/WEB-INF/myjsps/rmenu.jsp"/> 
+		<put-attribute name="FOOTER" value="/WEB-INF/myjsps/footer.jsp" />
+	</definition>
+	
+	<!-- <definition name="TestDef" extends="BaseDef">
+		<put-attribute name="BODY" value="/WEB-INF/myjsps/test.jsp" />
+	</definition> -->
+	
+    <definition name="AddStaffDef" extends="BaseDef">
+		<put-attribute name="BODY" value="/WEB-INF/myjsps/addStaff.jsp" />
+	</definition>
+	
+	<definition name="AddCustomerDef" extends="BaseDef">
+		<put-attribute name="BODY" value="/WEB-INF/myjsps/addCustomer.jsp" />
+	</definition>
+	
+	<definition name="AllUsersDef" extends="BaseDef">
+		<put-attribute name="BODY" value="/WEB-INF/myjsps/allusers.jsp" />
+	</definition>
+	
+	<definition name="AddCarDef" extends="BaseDef">
+		<put-attribute name="BODY" value="/WEB-INF/myjsps/addCar.jsp" />
+	</definition>
+	
+	<definition name="PartDef" extends="BaseDef">
+		<put-attribute name="BODY" value="/WEB-INF/myjsps/part.jsp" />
+	</definition>
+	
+	<definition name="ServiceDetailsDef" extends="BaseDef">
+		<put-attribute name="BODY" value="/WEB-INF/myjsps/serviceDetails.jsp" />
+	</definition>
+	
+	<definition name="ServiceNamesDef" extends="BaseDef">
+		<put-attribute name="BODY" value="/WEB-INF/myjsps/serviceNames.jsp" />
+	</definition>
+	
+	<definition name="WorksheetItemsDef" extends="BaseDef">
+		<put-attribute name="BODY" value="/WEB-INF/myjsps/worksheetItems.jsp" />
+	</definition>
+	
+	<definition name="RemoveCustomerDef" extends="BaseDef">
+		<put-attribute name="BODY" value="/WEB-INF/myjsps/removeCustomer.jsp" />
+	</definition>
+	
+	<definition name="RemoveStaffDef" extends="BaseDef">
+		<put-attribute name="BODY" value="/WEB-INF/myjsps/removeStaff.jsp" />
+	</definition>
+	
+	<definition name="LoginDef" extends="BaseDef">
+		<put-attribute name="BODY" value="/WEB-INF/myjsps/login.jsp" />
+	</definition>
+	
+	<!-- <definition name="RegisterDef" extends="BaseDef">
+		<put-attribute name="BODY" value="/WEB-INF/myjsps/register.jsp" />
+	</definition> -->
+	
+	<definition name="BookServiceDef" extends="BaseDef">
+		<put-attribute name="BODY" value="/WEB-INF/myjsps/bookService.jsp" />
+	</definition>
+	
+	<definition name="InvalidAccessDef" extends="BaseDef">
+		<put-attribute name="BODY" value="/WEB-INF/myjsps/invalidAccess.jsp" />
+	</definition>
+	
+</tiles-definitions>
